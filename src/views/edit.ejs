@@ -1,0 +1,18 @@
+<div class="card">
+    <fieldset class="fset-edit">
+        <legend>EDIT NEWS</legend>
+        <form action="/edit" method="POST">
+            <div class="form-group">
+                <output><%= rows.title %></output>
+                <input type="hidden" id="title" name="title" value="<%= rows.title %>" required>
+            </div>
+            <div class="form-group">
+                <label for="news">News</label>
+                <input type="text" id="news" name="news" value="<%= rows.news %>" required autofocus>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="save" name="save" value="Save">
+            </div>
+        </form>
+    </fieldset>
+</div>

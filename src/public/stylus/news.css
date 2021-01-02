@@ -1,0 +1,414 @@
+/* GENERAL ********************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+#title, #news {
+    width: 80%;
+    padding: 4px;
+}
+
+input:invalid {
+    background: #ffcccc;
+}
+
+.sign-message {
+    padding-top: 20px;
+}
+
+/* NAV ************************************************************************/
+.nav {
+    padding: 15px;
+    height: 20px;
+    background: gray;
+    text-align: center;
+    color: white;
+}
+
+/* Dropdown Button */
+.dropnews {
+    background-color: gray;
+    color: white;
+    padding: 2px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navuser,
+.dropdown {
+    display: inline-block;
+}
+
+#puser,
+#output-user {
+    display: inline;
+}
+
+.navuser {
+    float: right;
+    padding-right: 10%;
+}
+
+/* Dropdown User (Hidden by Default) */
+.dropdown-user {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown user */
+.dropdown-user a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropuser:hover .dropdown-user {
+    display: block;
+}
+
+/* SIGNIN *********************************************************************/
+/*
+.card-signin {
+    width: 1400px;
+    height: 650px;
+    background-image: url('/img/rami.jpg');
+    background-size: cover;
+}
+*/
+.fset-signin {
+    margin-top: 30px;
+    margin-left: 38%;
+    padding: 50px;
+    width: 20%;
+    height: 35%;
+    text-align: center;
+    background: #dcdde1;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    box-shadow: rgb(150, 150, 150) 15px 15px 20px;
+}
+
+.label-in {
+    z-index: 1;
+    left: 10px;
+    position: absolute;
+}
+
+#user,
+#password {
+    padding: 4px;
+    width: 65%;
+}
+
+#signin {
+    padding: 5px;
+    width: 90px;
+    background: cadetblue;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#signin:hover {
+    background: green;
+}
+
+/* SIGNUP *********************************************************************/
+.fset-signup {
+    margin-top: 30px;
+    margin-left: 33%;
+    padding: 50px;
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    background: #dcdde1;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    box-shadow: rgb(150, 150, 150) 15px 15px 20px;
+}
+
+label {
+    z-index: 1;
+    left: 15px;
+    position: absolute;
+}
+
+#firstname,
+#lastname,
+#email,
+#user,
+#password {
+    padding: 4px;
+    width: 80%;
+}
+
+#signup {
+    padding: 5px;
+    width: 90px;
+    background: cadetblue;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#signup:hover {
+    background: green;
+}
+
+/* CHGPWD *********************************************************************/
+.fset-chgpwd {
+    margin-top: 30px;
+    margin-left: 33%;
+    padding: 50px;
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    background: #dcdde1;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    box-shadow: rgb(150, 150, 150) 15px 15px 20px;
+}
+
+.label-chg {
+    z-index: 1;
+    left: 10px;
+    position: absolute;
+}
+
+#userchg,
+#pwdold,
+#pwdnew1,
+#pwdnew2 {
+    padding: 4px;
+    width: 65%;
+}
+
+#chgpwd {
+    padding: 5px;
+    width: 150px;
+    background: cadetblue;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#chgpwd:hover {
+    background: green;
+}
+
+/* LIST ***********************************************************************/
+#table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td,
+#table th {
+    border: solid 1px #ddd;
+    padding-left: 5px;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #484c50;
+    color: white;
+}
+
+#th-title {
+    width: 15%;
+    color: white;
+    text-decoration-line: none;
+}
+
+#th-date {
+    width: 7%;
+    color: white;
+    text-decoration-line: none;
+}
+
+#th-time,
+#th-edi,
+#th-del {
+    width: 6%;
+}
+
+#arrowDown,
+#arrowUp {
+    text-decoration-line: none;
+    color: white;
+}
+
+.edi {
+    text-decoration-line: none;
+    background: #45aaf2;
+    border-radius: 10%;
+    color: white;
+    padding: 0 18px;
+    column-span: none;
+}
+
+.edi:hover {
+    text-decoration: underline;
+}
+
+.del {
+    text-decoration-line: none;
+    background: #EA2027;
+    border-radius: 10%;
+    color: white;
+    padding: 0px 10px;
+    column-span: none;
+}
+
+.del:hover {
+    text-decoration: underline;
+}
+
+#delete {
+    padding: 5px;
+    width: 70px;
+    border-radius: 10%;
+    background: red;
+    color: white;
+}
+
+#delete:hover {
+    background: green;
+}
+
+/* ADD ************************************************************************/
+.fset-add {
+    margin: 50px 28%;
+    padding: 40px;
+    width: 40%;
+    text-align: center;
+    background: #dcdde1;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    box-shadow: rgb(150, 150, 150) 15px 15px 20px;
+}
+
+#add {
+    padding: 5px;
+    width: 70px;
+    background: cadetblue;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+input:invalid {
+    background: #ffcccc;
+}
+
+#add:hover {
+    background: green;
+}
+
+/* EDIT ***********************************************************************/
+.fset-edit {
+    margin: 50px 28%;
+    padding: 40px;
+    width: 40%;
+    text-align: center;
+    background: #dcdde1;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    box-shadow: rgb(150, 150, 150) 15px 15px 20px;
+}
+
+input:invalid {
+    background: #ffcccc;
+}
+
+#save {
+    padding: 5px;
+    width: 70px;
+    border-radius: 10px;
+    background: cadetblue;
+    color: white;
+}
+
+#save:hover {
+    background: green;
+}
+
+/* SEARCH *********************************************************************/
+.fset-search {
+    margin: 80px 37%;
+    padding: 30px;
+    width: 25%;
+    text-align: center;
+    background: #dcdde1;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    box-shadow: rgb(150, 150, 150) 15px 15px 20px;
+}
+
+#search {
+    width: 60%;
+    padding: 4px;    
+}
+
+input:invalid {
+    background: #ffcccc;
+}
+
+#btn_search {
+    padding: 5px;
+    width: 70px;
+    border-radius: 10px;
+    background: cadetblue;
+    color: white;
+}
+
+#btn_search:hover {
+    background: green;
+}

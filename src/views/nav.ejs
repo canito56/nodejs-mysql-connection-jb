@@ -1,0 +1,32 @@
+<nav class="nav">
+    <div class="dropdown">
+        <button class="dropnews">NEWS</button>
+        <div class="dropdown-content">
+            <% if (view == "signin" || view == "signup") { %>
+                <a href="/signin">SIGN IN</a>
+                <a href="/signup">SIGN UP</a>
+            <% } %>
+            <% if (view != "signin" && view != "signup") { %>
+                <a href="/list">All NEWS</a>
+                <% if (view != "add") { %> 
+                    <a href="/add">Add a NEWS</a>
+                <% } %> 
+                <% if (view != "search") { %>
+                    <a href="/search">Search a NEWS</a>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
+    <div class="navuser">
+        <div class="dropuser">
+            <% if (nuser != "") { %>
+            <p id="puser">User:</p>
+            <output id="output-user"><%= nuser %></output>
+            <div class="dropdown-user">
+                <a href="/chgpwd">Change Password</a>
+                <a href="/signin">SIGN OFF</a>    
+            </div>
+            <% } %>
+        </div>
+    </div>
+</nav>

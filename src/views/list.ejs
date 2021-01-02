@@ -1,0 +1,28 @@
+<table id="table" class="animate__animated animate__zoomIn">    
+    <tr>
+        <% if (search == "N") { %> 
+        <th><a href="/listtitle" id="th-title">TITLE</a></th>
+        <% } else { %>
+        <th id="th-title">TITLE</th>
+        <% } %>  
+        <th>NEWS</th>
+        <% if (search == "N") { %> 
+        <th><a href="/listdate" id="th-date">DATE</a></th>
+        <% } else { %>
+        <th id="th-date">DATE</th>
+        <% } %>  
+        <th id="th-time">TIME</th>
+        <th id="th-edi"></th>
+        <th id="th-del"></th>
+    </tr>
+    <% for (var i=0; i < news.length; i++) { %>
+    <tr>
+        <td><%= news[i].title %></td>
+        <td><%= news[i].news %></td>
+        <td><%= news[i].date %></td>
+        <td><%= news[i].time %></td>
+        <td><a href="/edit/<%- news[i].id_news %>" class="edi">Edit</a></td>
+        <td><a href="/delete/<%- news[i].id_news %>" class="del">Delete</a></td>
+    </tr>
+    <% } %>
+</table>
