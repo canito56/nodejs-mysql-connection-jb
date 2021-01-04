@@ -19,6 +19,10 @@ src/views/list.ejs              The first template that is displayed when the ap
 src/views/add.ejs               Template to register news, it is included in main.ejs
 src/views/edit.ejs              Template to edit and change news, it is included in main.ejs
 src/views/nav.ejs               Template with only the nav part, it is included in main.ejs
+src/views/chgpwd.ejs            Template to change password, it is included in main.ejs
+src/views/search.ejs            Template to search a news, it is included in main.ejs
+src/views/signin.ejs            Template to signin, it is included in main.ejs
+src/views/signup.ejs            Template to signup, it is included in main.ejs  
 src/database.js                 Has the connection with mysql
 src/database                    To store sql scripts
 
