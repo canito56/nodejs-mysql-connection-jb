@@ -10,6 +10,7 @@ src/index.js                    To start all the app, configuration and start of
                                 required: express, path, body-parser, the port, the view engine, the view path are set
 src/news.js                     It will have the connection to the DB and the queries, since the routes are the place 
                                 where the application receives the browser requests
+src/news_modules.js             Contains, for now, only the password encryption module
 src/public                      It will have the project images and styles (CSS)
 src/public/stylus/news.CSS      Styles of the elements of the different templates
 src/views                       For all project views
